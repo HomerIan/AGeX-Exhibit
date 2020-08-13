@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Gallery Website/stylesheet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Gallery Website/Shared/vendor/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="../Gallery Website/lightbox2-2.11.3/dist/css/lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins">
+    <title>AGeX Exhibit</title>
+    <link rel="icon" href="../Gallery Website/agex-logo-icon.png" type="image/gif">
+</head>
+<body>
+    <div class="wrapper">
+        <!--side bar-->
+        <div class="side-navbar" id="sideNavbar">
+            <button type="button" id="togglebtn" class="toggler btn" onclick="toggleSidebar()">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button> 
+
+            <div class="side-navbar-container">
+                <div class="side-navbar-logo">
+                    <div class="img-site"><img src="../Gallery Website/agex-logo.png" alt=""></div>
+                </div>
+                <div class="side-navbar-link-container">
+                    <a href="../Gallery Website/index.html" class="side-nav-link active">Distinctions</a>
+                    <a href="../Gallery Website/aboutAGeX.html" class="side-nav-link">About AGeX</a>
+                    <a href="../Gallery Website/contributors.html" class="side-nav-link">Contributors</a>
+                    <a href="../Gallery Website/artWorksGallery.html" class="side-nav-link">#WeHealAsOne</a>
+                    <a href="../Gallery Website/shortFilmsGallery.html" class="side-nav-link">Short Films</a>
+                </div>
+            </div>
+        </div>
+        <!--main-->
+        <div class="main-content" id="mainContent">
+            <!--navbar-->
+            <nav class="navbar navbar-dark" id="navbar">
+                <img src="../Gallery Website/testlogo.png" alt="">
+                <ul>
+                    <li><a href="../Gallery Website/index.html" class="active">Distinctions</a></li>
+                    <li><a href="../Gallery Website/aboutAGeX.html" class="">About AGeX</a></li>
+                    <li><a href="../Gallery Website/contributors.html" class="">Contributors</a></li>
+                    <li><a href="../Gallery Website/artWorksGallery.html" class="">#WeHealAsOne</a></li>
+                    <li><a href="../Gallery Website/shortFilmsGallery.html" class="">Short Films</a></li>
+                </ul>
+                <button type="button" id="togglebtn" class="toggler btn" style="margin: 5px 5px;" onclick="displayList()">
+                    <span class="navbar-toggler-icon"></span>
+                </button> 
+            </nav>
+
+            <!--main-->
+            <div class="container px-sm-0 px-md-0 px-lg-0">
+
+                <div class="nominee" id="nominee">
+                    <a href="javascript:void();" onclick="toggleProfileSidebar()">ARTISTS</a>
+                </div>
+                
+                <div class="profile-sidebar" id="profile-sidebar">
+                    <div class="flex-container">
+                        <div>
+                            <a href="../Gallery Website/gayas_profile.html"><img id="profile-sidebar-picture" src="../Gallery Website/main-artist-pic/gayas-dark.png" alt=""></a>
+                        </div>
+
+                        <div>
+                            <a href="../Gallery Website/remmel_profile.html"><img id="profile-sidebar-picture" src="../Gallery Website/main-artist-pic/remmel-dark.PNG" alt=""></a>
+                        </div>
+
+                        <div>
+                            <a href="../Gallery Website/joshua_profile.html"><img id="profile-sidebar-picture" src="../Gallery Website/main-artist-pic/joshua-dark.jpg" alt=""></a>
+                        </div>
+
+                        <div>
+                            <a href="../Gallery Website/eren_profile.html"><img id="profile-sidebar-picture" src="../Gallery Website/main-artist-pic/eren-dark.png" alt=""></a>
+                        </div>
+
+                        <div>
+                            <a href="../Gallery Website/aaron_profile.html"><img id="profile-sidebar-picture" src="../Gallery Website/main-artist-pic/aaron-dark.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row" style="margin-top: 10%; margin-right: -20px; margin-bottom: 20px;">
+                    <!--ARTIST IMAGE-->
+                    <div class="col-sm-12 col-md-2 col-lg-2">
+                        <img class="artist" src="../Gallery Website/main-artist-pic/dean-dark.jpg" alt="">
+                    </div>
+
+                    <!--PAGE CONTENT-->
+                    <div class="col-sm-12 col-md-9 col-lg-9 align-self-start">
+                        <div class="name">Dean Ej Dela Cruz</div>
+                        <div class="course">Distinction in Digital Arts</div>
+                        <div class="course">BS EMC - Digital Animation</div>
+                        <div class="about">Dean is a hardworking and flexible student, he works as a freelance graphic
+                            designer at upwork, and when he has spare time for arts, he 
+                            make random concepts in background and character designs
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="profileGalleryRow">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="profileGallery">
+
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/art-of-dean-city-of-lights.jpg" data-lightbox="profileGallery" data-title="Title Created by Artist">
+                                    <img src="../Gallery Website/artworks/art-of-dean-city-of-lights.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/20200807_2139_Studio_Ghibli.jpg" data-lightbox="profileGallery" data-title="Title Created by Artist">
+                                    <img src="../Gallery Website/artworks/20200807_2139_Studio_Ghibli.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/20200805_1154_A_man_in_his_late_forties,_who_is_very_adventurous..jpg" data-lightbox="profileGallery" data-title="Title Created by Artist">
+                                    <img src="../Gallery Website/artworks/20200805_1154_A_man_in_his_late_forties,_who_is_very_adventurous..jpg" alt="...">
+                                </a>
+                            </div>
+
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/20200803_1903_TRIX_(VALORANT_STYLE).jpg" data-lightbox="profileGallery" data-title="Title Created by Artist">
+                                    <img src="../Gallery Website/artworks/20200803_1903_TRIX_(VALORANT_STYLE).jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/20200602_1847_Color_Study_inspired_by_Anninosart.jpg" data-lightbox="profileGallery" data-title="Title Created by Artist">
+                                    <img src="../Gallery Website/artworks/20200602_1847_Color_Study_inspired_by_Anninosart.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/20200330_2040_Ronin.jpg" data-lightbox="profileGallery" data-title="Title Created by Artist">
+                                    <img src="../Gallery Website/artworks/20200330_2040_Ronin.jpg" alt="...">
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="dotted-spaced">&nbsp;</div>
+
+            </div>
+            
+        </div>
+    </div>
+</body>
+<!--Script-->
+<script src="../Gallery Website/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="../Gallery Website/lightbox2-2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+<!--/#Script-->
+</html>

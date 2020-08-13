@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Gallery Website/stylesheet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Gallery Website/Shared/vendor/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="../Gallery Website/lightbox2-2.11.3/dist/css/lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins">
+    <title>AGeX Exhibit</title>
+    <link rel="icon" href="../Gallery Website/agex-logo-icon.png" type="image/gif">
+</head>
+<body>
+    <div class="wrapper">
+        <!--side bar-->
+        <div class="side-navbar" id="sideNavbar">
+            <button type="button" id="togglebtn" class="toggler btn" onclick="toggleSidebar()">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button> 
+
+            <div class="side-navbar-container">
+                <div class="side-navbar-logo">
+                    <div class="img-site"><img src="../Gallery Website/agex-logo.png" alt=""></div>
+                </div>
+                <div class="side-navbar-link-container">
+                    <a href="../Gallery Website/index.html" class="side-nav-link">Distinctions</a>
+                    <a href="../Gallery Website/aboutAGeX.html" class="side-nav-link">About AGeX</a>
+                    <a href="../Gallery Website/contributors.html" class="side-nav-link">Contributors</a>
+                    <a href="../Gallery Website/artWorksGallery.html" class="side-nav-link">#WeHealAsOne</a>
+                    <a href="../Gallery Website/shortFilmsGallery.html" class="side-nav-link active">Short Films</a>
+                </div>
+            </div>
+        </div>
+        <!--main-->
+        <div class="main-content" id="mainContent">
+            <!--navbar-->
+            <nav class="navbar navbar-dark" id="navbar">
+                <img src="../Gallery Website/testlogo.png" alt="">
+                <ul>
+                    <li><a href="../Gallery Website/index.html" class="">Distinctions</a></li>
+                    <li><a href="../Gallery Website/aboutAGeX.html" class="">About AGeX</a></li>
+                    <li><a href="../Gallery Website/contributors.html" class="">Contributors</a></li>
+                    <li><a href="../Gallery Website/artWorksGallery.html" class="">#WeHealAsOne</a></li>
+                    <li><a href="../Gallery Website/shortFilmsGallery.html" class="active">Short Films</a></li>
+                </ul>
+                <button type="button" id="togglebtn" class="toggler btn" style="margin: 5px 5px;" onclick="displayList()">
+                    <span class="navbar-toggler-icon"></span>
+                </button> 
+            </nav>
+            <!--page content-->
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-5">Short Films</h1>
+                  <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quos eum vitae officiis ullam dicta reprehenderit porro.</p>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                
+                <div class="shortFilmGallery">
+                    <div class="filmBox">
+                        <a href="../Gallery Website/short films/Funtasya Final Output Showcase.mp4">
+                            <span><img id="play-btn" src="../Gallery Website/play-btn.png" alt=""></span>
+                            <img src="../Gallery Website/thumbnails/Funtasya Final Output Showcase.mp4_snapshot.jpg" alt="...">
+                        </a>
+                        <div class="film-title">Film title by Artist</div>
+                    </div>
+                    <div class="filmBox">
+                        <a href="../Gallery Website/short films/Peymus 3D by JART.mp4">
+                            <span><img id="play-btn" src="../Gallery Website/play-btn.png" alt=""></span>
+                            <img src="../Gallery Website/thumbnails/Peymus 3D by JART.mp4_snapshot.jpg" alt="...">
+                        </a>
+                        <div class="film-title">Film title by Artist</div>
+                    </div>
+                    <div class="filmBox">
+                        <a href="../Gallery Website/short films/CD Portfolio PINGOL.mp4">
+                            <span><img id="play-btn" src="../Gallery Website/play-btn.png" alt=""></span>
+                            <img src="../Gallery Website/thumbnails/CD Portfolio PINGOL.mp4_snapshot.jpg" alt="...">
+                        </a>
+                        <div class="film-title">Film title by Artist</div>
+                    </div>
+                    <div class="filmBox">
+                        <a href="../Gallery Website/short films/Prejudice - Vlad and Edcel.mp4">
+                            <span><img id="play-btn" src="../Gallery Website/play-btn.png" alt=""></span>
+                            <img src="../Gallery Website/thumbnails/Prejudice - Vlad and Edcel.mp4_snapshot.jpg" alt="...">
+                        </a>
+                        <div class="film-title">Film title by Artist</div>
+                    </div>
+                    <div class="filmBox">
+                        <a href="../Gallery Website/short films/THE FIFTH 2D ANIMATION SHORT FILM - SATO - NOBLE - GOROSPE FULL MOVIE With Subtitle.mp4">
+                            <span><img id="play-btn" src="../Gallery Website/play-btn.png" alt=""></span>
+                            <img src="../Gallery Website/thumbnails/THE FIFTH 2D ANIMATION SHORT FILM - SATO - NOBLE - GOROSPE FULL MOVIE With Subtitle.mp4_snapshot.jpg" alt="...">
+                        </a>
+                        <div class="film-title">Film title by Artist</div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+</body>
+<!--Script-->
+<script src="../Gallery Website/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="../Gallery Website/lightbox2-2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+<!--/#Script-->
+</html>

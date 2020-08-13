@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Gallery Website/stylesheet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Gallery Website/Shared/vendor/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="../Gallery Website/lightbox2-2.11.3/dist/css/lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins|Roboto">
+    <title>AGeX Exhibit</title>
+    <link rel="icon" href="../Gallery Website/agex-logo-icon.png" type="image/gif">
+</head>
+<body>
+    <div class="wrapper">
+        <!--side bar-->
+        <div class="side-navbar" id="sideNavbar">
+            <button type="button" id="togglebtn" class="toggler btn" onclick="toggleSidebar()">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button> 
+
+            <div class="side-navbar-container"> 
+                <div class="side-navbar-logo">
+                    <div class="img-site"><img src="../Gallery Website/agex-logo.png" alt=""></div>
+                </div>
+                
+                <div class="side-navbar-link-container">
+                    <a href="../Gallery Website/index.html" class="side-nav-link active">Distinctions</a>
+                    <a href="../Gallery Website/aboutAGeX.html" class="side-nav-link">About AGeX</a>
+                    <a href="../Gallery Website/contributors.html" class="side-nav-link">Contributors</a>
+                    <a href="../Gallery Website/artWorksGallery.html" class="side-nav-link">#WeHealAsOne</a>
+                    <a href="../Gallery Website/shortFilmsGallery.html" class="side-nav-link">Short Films</a>
+                </div>
+                
+            </div>
+        </div>
+        <!--main-->
+        <div class="main-content" id="mainContent">
+            <!--navbar-->
+            <nav class="navbar navbar-dark" id="navbar">
+                <img src="../Gallery Website/testlogo.png" alt="">
+                <ul>
+                    <li><a href="../Gallery Website/index.html" class="active">Distinctions</a></li>
+                    <li><a href="../Gallery Website/aboutAGeX.html" class="">About AGeX</a></li>
+                    <li><a href="../Gallery Website/contributors.html" class="">Contributors</a></li>
+                    <li><a href="../Gallery Website/artWorksGallery.html" class="">#WeHealAsOne</a></li>
+                    <li><a href="../Gallery Website/shortFilmsGallery.html" class="">Short Films</a></li>
+                </ul>
+                <button type="button" id="togglebtn" class="toggler btn" style="margin: 5px 5px;" onclick="displayList()">
+                    <span class="navbar-toggler-icon"></span>
+                </button> 
+            </nav>
+            <!--Page content-->
+            <div class="container-fluid px-sm-0 px-md-0 px-lg-0" style="  padding-left: 0rem; padding-right: 0rem; overflow: hidden;">
+
+                <div class="grid-container">
+                    <div class="top1">
+                        <a href="../Gallery Website/gayas_profile.html" id="viewArtist"><span><i class="far fa-eye mr-1"></i>
+                        </span>ARTIST</a>
+                        <a href="../Gallery Website/short films/hyperlapse.mp4"  id="viewImage"><span><i class="far fa-image mr-1"></i>
+                        </span>BEST IMAGE</a>
+                    </div>
+                    
+                    <div class="top2">
+                        <a href="../Gallery Website/joshua_profile.html" id="viewArtist"><span><i class="far fa-eye mr-1"></i>
+                        </span>ARTIST</a>
+                        <a href="../Gallery Website/artworks/20200330_2040_Ronin.jpg" data-lightbox="top_two_image" data-title="Example 2" id="viewImage"><span><i class="far fa-image mr-1"></i>
+                        </span>VIEW IMAGE</a>
+                    </div>
+
+                    <div class="top3">
+                        <a href="../Gallery Website/remmel_profile.html" id="viewArtist"><span><i class="far fa-eye mr-1"></i>
+                        </span>ARTIST</a>
+                        <a href="../Gallery Website/artworks/IsoStreet.jpg" data-lightbox="top_three_image" data-title="Example 3" id="viewImage"><span><i class="far fa-image mr-1"></i>
+                        </span>VIEW IMAGE</a>
+                    </div>
+
+                    <div class="top4">
+                        <a href="../Gallery Website/eren_profile.html" id="viewArtist"><span><i class="far fa-eye mr-1"></i>
+                        </span>ARTIST</a>
+                        <a href="../Gallery Website/artworks/Final Bakugou.png" data-lightbox="top_four_image" data-title="Example 4" id="viewImage"><span><i class="far fa-image mr-1"></i>
+                        </span>VIEW IMAGE</a>
+                    </div>
+                    
+                    <div class="top5">
+                        <a href="../Gallery Website/dean_profile.html" id="viewArtist"><span><i class="far fa-eye mr-1"></i>
+                        </span>ARTIST</a>
+                        <a href="../Gallery Website/artworks/neu bg (3).jpg" data-lightbox="top_five_image" data-title="Example 5" id="viewImage"><span><i class="far fa-image mr-1"></i>
+                        </span>VIEW IMAGE</a>
+                    </div>
+
+                    <div class="top6">
+                        <a href="../Gallery Website/aaron_profile.html" id="viewArtist"><span><i class="far fa-eye mr-1"></i>
+                        </span>ARTIST</a>
+                        <a href="../Gallery Website/woman-5409203_640.jpg" data-lightbox="top_six_image" data-title="Example 6" id="viewImage"><span><i class="far fa-image mr-1"></i>
+                        </span>VIEW IMAGE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!--Script-->
+<script src="../Gallery Website/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="../Gallery Website/lightbox2-2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+<!--/#Script-->
+</html>

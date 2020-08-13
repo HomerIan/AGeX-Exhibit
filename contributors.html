@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Gallery Website/stylesheet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Gallery Website/Shared/vendor/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="../Gallery Website/lightbox2-2.11.3/dist/css/lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link href="//vjs.zencdn.net/7.8.2/video-js.min.css" rel="stylesheet">
+    <title>AGeX Exhibit</title>
+    <link rel="icon" href="../Gallery Website/agex-logo-icon.png" type="image/gif">
+</head>
+<body>
+    <div class="wrapper">
+        <!--side bar-->
+        <div class="side-navbar" id="sideNavbar">
+            <button type="button" id="togglebtn" class="toggler btn" onclick="toggleSidebar()">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button> 
+
+            <div class="side-navbar-container">
+                <div class="side-navbar-logo">
+                    <div class="img-site"><img src="../Gallery Website/agex-logo.png" alt=""></div>
+                </div>
+                <div class="side-navbar-link-container">
+                    <a href="../Gallery Website/index.html" class="side-nav-link">Distinctions</a>
+                    <a href="../Gallery Website/aboutAGeX.html" class="side-nav-link">About AGeX</a>
+                    <a href="../Gallery Website/contributors.html" class="side-nav-link active">Contributors</a>
+                    <a href="../Gallery Website/artWorksGallery.html" class="side-nav-link">#WeHealAsOne</a>
+                    <a href="../Gallery Website/shortFilmsGallery.html" class="side-nav-link">Short Films</a>
+                </div>
+            </div>
+        </div>
+        <!--main-->
+        <div class="main-content" id="mainContent">
+            <!--navbar-->
+            <nav class="navbar navbar-dark" id="navbar">
+                <img src="../Gallery Website/testlogo.png" alt="">
+                <ul>
+                    <li><a href="../Gallery Website/index.html" class="">Distinctions</a></li>
+                    <li><a href="../Gallery Website/aboutAGeX.html" class="">About AGeX</a></li>
+                    <li><a href="../Gallery Website/contributors.html" class="active">Contributors</a></li>
+                    <li><a href="../Gallery Website/artWorksGallery.html" class="">#WeHealAsOne</a></li>
+                    <li><a href="../Gallery Website/shortFilmsGallery.html" class="">Short Films</a></li>
+                </ul>
+                <button type="button" id="togglebtn" class="toggler btn" style="margin: 5px 5px;" onclick="displayList()">
+                    <span class="navbar-toggler-icon"></span>
+                </button> 
+            </nav>
+            <!--page content-->
+            <div class="container-fluid">
+
+                <div class="row justify-content-center" >
+                    <div class="col-md-3 col-lg-3 align-self-center">
+                        <div class="contributor-name">
+                            Nikka Silva
+                        </div>
+                        <div class="contributor-course">
+                            BS EMC - Digital Animation
+                        </div>
+                        <div class="contributor-about">
+                            www.facebook.com/neuluminous/
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-lg-9">
+                        <div class="contributorsGallery">
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/unnamed.jpg" data-lightbox="contributorName1-gallery">
+                                    <img src="../Gallery Website/artworks/unnamed.jpg" alt="...">
+                                </a>         
+                            </div>
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/mermaid.jpg" data-lightbox="contributorName1-gallery">
+                                    <img src="../Gallery Website/artworks/mermaid.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/mabel big.jpg" data-lightbox="contributorName1-gallery">
+                                    <img src="../Gallery Website/artworks/mabel big.jpg" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-3 col-lg-3 align-self-center">
+                        <div class="contributor-name">
+                            Neil Tan Germio
+                        </div>
+                        <div class="contributor-course">
+                            BS EMC - Digital Animation
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-lg-9">
+                        <div class="contributorsGallery">
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/jett valor.jpg" data-lightbox="contributorName2-gallery">
+                                    <img src="../Gallery Website/artworks/jett valor.jpg" alt="...">
+                                </a>        
+                            </div>
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/Illustration7.jpg" data-lightbox="contributorName2-gallery">
+                                    <img src="../Gallery Website/artworks/Illustration7.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/Illustration6.jpg" data-lightbox="contributorName2-gallery">
+                                    <img src="../Gallery Website/artworks/Illustration6.jpg" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-3 col-lg-3 align-self-center">
+                        <div class="contributor-name">
+                            Marc Joel Velloyas
+                        </div>
+                        <div class="contributor-course">
+                            BS EMC - Digital Animation
+                        </div>
+                        <div class="contributor-about">
+                            www.instagram.com/marcroscope/
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-lg-9">
+                        <div class="contributorsGallery">
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/Filipino Warrior.jpg" data-lightbox="contributorName3-gallery">
+                                    <img src="../Gallery Website/artworks/Filipino Warrior.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/BUBU.png" data-lightbox="contributorName3-gallery">
+                                    <img src="../Gallery Website/artworks/BUBU.png" alt="...">
+                                </a>
+                            </div>
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/Baby Tartaros.jpg" data-lightbox="contributorName3-gallery">
+                                    <img src="../Gallery Website/artworks/Baby Tartaros.jpg" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-3 col-lg-3 align-self-center">
+                        <div class="contributor-name">
+                            Krystal Alec Genson
+                        </div>
+                        <div class="contributor-course">
+                            BS EMC - Digital Animation
+                        </div>
+                        <div class="contributor-about">
+                            www.instagram.com/karykachu/
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-lg-9">
+                        <div class="contributorsGallery">
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/PNG image.png" data-lightbox="contributorName4-gallery">
+                                    <img src="../Gallery Website/artworks/PNG image.png" alt="...">
+                                </a>       
+                            </div>
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/Kim Seokjin (Dynamite out on aug21).png" data-lightbox="contributorName4-gallery">
+                                    <img src="../Gallery Website/artworks/Kim Seokjin (Dynamite out on aug21).png" alt="...">
+                                </a>
+                            </div>
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/9.81 mps².png" data-lightbox="contributorName4-gallery">
+                                    <img src="../Gallery Website/artworks/9.81 mps².png" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-3 col-lg-3 align-self-center">
+                        <div class="contributor-name">
+                            John Paul D. Grande
+                        </div>
+                        <div class="contributor-course">
+                            BS EMC - Digital Animation
+                        </div>
+                        <div class="contributor-about">
+                            www.facebook.com/jeeypss/<br>
+                            www.instagram.com/jpgrandeee/
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-lg-9">
+                        <div class="contributorsGallery">
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/4.png" data-lightbox="contributorName5-gallery">
+                                    <img src="../Gallery Website/artworks/4.png" alt="...">
+                                </a>          
+                            </div>
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/3.jpg" data-lightbox="contributorName5-gallery">
+                                    <img src="../Gallery Website/artworks/3.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/2.jpg" data-lightbox="contributorName5-gallery">
+                                    <img src="../Gallery Website/artworks/2.jpg" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-3 col-lg-3 align-self-center">
+                        <div class="contributor-name">
+                            Jancis Arwin De Guzman
+                        </div>
+                        <div class="contributor-course">
+                            BS EMC - Digital Animation
+                        </div>
+                        <div class="contributor-about">
+                            www.instagram.com/_jncs_dgzmn/
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-lg-9">
+                        <div class="contributorsGallery">
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/117591847_295025604922137_3311846435603950044_n.jpg" data-lightbox="contributorName6-gallery">
+                                    <img src="../Gallery Website/artworks/117591847_295025604922137_3311846435603950044_n.jpg" alt="...">
+                                </a>         
+                            </div>
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/117334207_297205795036872_6040744601597997126_n.jpg" data-lightbox="contributorName6-gallery">
+                                    <img src="../Gallery Website/artworks/117334207_297205795036872_6040744601597997126_n.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/117173285_1379668882232535_8145644278794641601_n.png" data-lightbox="contributorName6-gallery">
+                                    <img src="../Gallery Website/artworks/117173285_1379668882232535_8145644278794641601_n.png" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-3 col-lg-3 align-self-center">
+                        <div class="contributor-name">
+                            Herman Calizo
+                        </div>
+                        <div class="contributor-course">
+                            BS EMC - Digital Animation
+                        </div>
+                        <div class="contributor-about">
+                            www.facebook.com/SiningHari9/<br>
+                            www.instagram.com/hermanomann/
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-lg-9">
+                        <div class="contributorsGallery">
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/avatarairmain.jpg" data-lightbox="contributorName7-gallery">
+                                    <img src="../Gallery Website/artworks/avatarairmain.jpg" alt="...">
+                                </a>          
+                            </div>
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/artt.png" data-lightbox="contributorName7-gallery">
+                                    <img src="../Gallery Website/artworks/artt.png" alt="...">
+                                </a>    
+                            </div>
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/art1.png" data-lightbox="contributorName7-gallery">
+                                    <img src="../Gallery Website/artworks/art1.png" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-3 col-lg-3 align-self-center">
+                        <div class="contributor-name">
+                            Elmon Dacoco
+                        </div>
+                        <div class="contributor-course">
+                            BS EMC - Digital Animation
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-lg-9">
+                        <div class="contributorsGallery">
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/sketch1596867884270.png" data-lightbox="contributorName8-gallery">
+                                    <img src="../Gallery Website/artworks/sketch1596867884270.png" alt="...">
+                                </a>          
+                            </div>
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/ce7554ba-6354-47cd-8950-4c968c871235.png" data-lightbox="contributorName8-gallery">
+                                    <img src="../Gallery Website/artworks/ce7554ba-6354-47cd-8950-4c968c871235.png" alt="...">
+                                </a>    
+                            </div>
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/2f5d3693-0b51-4646-93fe-0dc1de1c7dee.png" data-lightbox="contributorName8-gallery">
+                                    <img src="../Gallery Website/artworks/2f5d3693-0b51-4646-93fe-0dc1de1c7dee.png" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-3 col-lg-3 align-self-center">
+                        <div class="contributor-name">
+                            Josh Daniel Santos
+                        </div>
+                        <div class="contributor-course">
+                            BS EMC - Digital Animation
+                        </div>
+                        <div class="contributor-about">
+                            www.instagram.com/josiah.ravenwood/
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-lg-9">
+                        <div class="contributorsGallery">
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/obsidian.png" data-lightbox="contributorName9-gallery">
+                                    <img src="../Gallery Website/artworks/obsidian.png" alt="...">
+                                </a>          
+                            </div>
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/Man_s_Dominion(scribblesketch).JPG" data-lightbox="contributorName9-gallery">
+                                    <img src="../Gallery Website/artworks/Man_s_Dominion(scribblesketch).JPG" alt="...">
+                                </a>    
+                            </div>
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/fanart1.1.png" data-lightbox="contributorName9-gallery">
+                                    <img src="../Gallery Website/artworks/fanart1.1.png" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-3 col-lg-3 align-self-center">
+                        <div class="contributor-name">
+                            Alexandra Isabel Manguera
+                        </div>
+                        <div class="contributor-course">
+                            BS EMC - Digital Animation
+                        </div>
+                        <div class="contributor-about">
+                            www.instagram.com/arekusu.art/
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-lg-9">
+                        <div class="contributorsGallery">
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/senku.jpg" data-lightbox="contributorName10-gallery">
+                                    <img src="../Gallery Website/artworks/senku.jpg" alt="...">
+                                </a>          
+                            </div>
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/rem.jpg" data-lightbox="contributorName10-gallery">
+                                    <img src="../Gallery Website/artworks/rem.jpg" alt="...">
+                                </a>    
+                            </div>
+                            <div class="imageBox">
+                                <a href="../Gallery Website/artworks/hyouka.jpg" data-lightbox="contributorName10-gallery">
+                                    <img src="../Gallery Website/artworks/hyouka.jpg" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<!--Script-->
+<script src="../Gallery Website/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="../Gallery Website/lightbox2-2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+<script src="//vjs.zencdn.net/7.8.2/video.min.js"></script>
+<!--/#Script-->
+</html>
